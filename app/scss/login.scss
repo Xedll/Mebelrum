@@ -1,0 +1,93 @@
+.login {
+	max-width: 480px;
+	margin: 345px auto 80px auto;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		background: #d4d4d4;
+		border-radius: 15px;
+	}
+
+	&__title {
+		font-family: "Merriweather Sans", sans-serif;
+		font-size: 32px;
+		font-weight: 700;
+		color: #fff;
+		padding: 26px 0;
+		width: 100%;
+		background: #332727;
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	&__content {
+		width: 100%;
+		padding: 54px 56px 32px 56px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		& > *:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__request {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__formText {
+		font-family: "PT Serif", serif;
+		font-size: 24px;
+		color: #2a2828;
+		padding-left: 15px;
+		margin-bottom: 10px;
+	}
+
+	&__formInput {
+		width: 100%;
+		padding: 5px;
+		border-radius: 15px;
+		border: solid 3px #b4b4b4;
+		background: inherit;
+		font-family: "PT Serif", serif;
+		font-size: 24px;
+		color: #9f9898;
+	}
+
+	&__login {
+		margin-top: 35px;
+	}
+
+	&__login,
+	&__signup {
+		font-family: "Merriweather Sans", sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		color: #fff;
+		padding: 15px 0;
+		width: 80%;
+		background: #000;
+		border-radius: 15px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__forgot {
+		font-family: "PT Serif", serif;
+		font-size: 20px;
+		color: #2a2828;
+		text-decoration: underline;
+		background: none;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

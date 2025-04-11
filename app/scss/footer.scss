@@ -1,0 +1,106 @@
+.footer {
+	background: #000;
+	padding: 50px 0 25px 0;
+	position: relative;
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(3, 30%);
+		column-gap: 5%;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__title {
+		font-family: "PT Serif", serif;
+		font-size: 24px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 60px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		& > *:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #fff;
+		font-family: "PT Serif", serif;
+		font-size: 24px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__contactsList {
+		& > *:nth-child(2) {
+			text-decoration: underline;
+		}
+	}
+	&__social > .footer__title {
+		text-align: center;
+	}
+
+	&__socialContainer {
+		display: flex;
+		width: fit-content;
+		margin: 0 auto;
+		align-items: center;
+		& > *:not(:last-child) {
+			margin-right: 54px;
+		}
+		& > *:nth-child(1) {
+			background: url(../images/B_social.avif);
+		}
+		& > *:nth-child(2) {
+			background: url(../images/instagram.avif);
+		}
+	}
+
+	&__linkSocial {
+		display: block;
+		width: 42px;
+		height: 42px;
+	}
+
+	&__info > .footer__title {
+		text-align: right;
+	}
+	&__infoList {
+		align-items: flex-end;
+	}
+
+	&__infoLink {
+		text-align: right;
+		text-decoration: none;
+		color: #fff;
+		font-family: "PT Serif", serif;
+		font-size: 24px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__bottom {
+		width: 100%;
+		height: 1px;
+		background: #fff;
+		position: absolute;
+		bottom: 80px;
+		left: 0;
+	}
+
+	&__text {
+		margin-top: 72px;
+		font-family: "PT Serif", serif;
+		font-size: 24px;
+		color: #fff;
+		width: 100%;
+		text-align: center;
+	}
+}

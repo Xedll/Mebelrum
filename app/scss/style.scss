@@ -1,0 +1,52 @@
+._container {
+	padding: 0 40px;
+	max-width: 1320px;
+	width: 100%;
+	height: inherit;
+	margin: 0 auto;
+}
+
+.image {
+	width: 100%;
+}
+body {
+	background: #433a3a;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		position: fixed;
+
+		display: block;
+		background: rgba($color: #fff, $alpha: 0.2);
+		width: calc((100% - 1240px) / 2);
+		height: 100%;
+		z-index: 20;
+
+		top: 0;
+	}
+
+	&::before {
+		right: 0;
+	}
+	&::after {
+		left: 0;
+	}
+}
+main {
+	flex: 1 1 100%;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+	appearance: none;
+	-moz-appearance: textfield;
+}
